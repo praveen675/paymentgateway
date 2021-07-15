@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAI Foundation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+  </head>
+  <body>
+
+    <header>
+      <a href="#" class="brand">SAI</a>
+      <div class="menu">
+        <div class="btn">
+          <i class="fas fa-times close-btn"></i>
+        </div>
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="Contact.html">Contact</a>
+      </div>
+      <div class="btn">
+        <i class="fas fa-bars menu-btn"></i>
+      </div>
+    </header>
+    <section class="section-mains1">
+    </section>
+    <section class="section-two">
+     <div class="container">
+  <div class="contact-section">
+</div>
+ <!--alert messages start
+
+    <div class="alert-success">
+
+      <span>Message Sent! Thank you for contacting us.</span>
+    </div>
+    <div class="alert-error">
+      <span>Something went wrong! Please try again.</span>
+    </div>
+    alert messages end-->
+
+    <!--contact section start-->
+    <div1>
+    <div class="contact-section">
+      <div class="contact-info">
+        <div  id="game"><i class="fas fa-map-marker-alt"> </i>Bangalore,India</div>
+        <div  id="game"><i class="fas fa-envelope"></i>praveen.sc1999@gmail.com</div>
+        <div  id="game"><i class="fas fa-phone" ></i>+91 7259542461</div>
+      </div>
+      <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form class="contact" action="" method="post">
+          <input type="text" name="name" class="text-box" placeholder="Your Name" required>
+          <input type="email" name="email" class="text-box" placeholder="Your Email" required>
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <input type="submit" name="submit" class="send-btn" value="Send">
+        </form>
+      </div>
+    </div>
+    </div1>
+     <div class="media-icons">
+        <a href="https://www.facebook.com/praveen.chandrashekar.3990"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://linkedin.com/in/praveen-gowda-a91b13202"><i class="fab fa-linkedin"></i></a>
+        <a href="https://instagram.com/praveen_gowda1999?utm_medium=copy_link"><i class="fab fa-instagram"></i></a>
+      </div>
+    
+    <!--contact section end-->
+    </section>
+   
+  
+
+    <script type="text/javascript">
+    //javascript for navigation bar effect on scroll
+    window.addEventListener("scroll", function(){
+      var header = document.querySelector("header");
+      header.classList.toggle('sticky', window.scrollY > 0);
+    });
+
+    //javascript for responsive navigation sidebar menu
+    var menu = document.querySelector('.menu');
+    var menuBtn = document.querySelector('.menu-btn');
+    var closeBtn = document.querySelector('.close-btn');
+
+    menuBtn.addEventListener("click", () => {
+      menu.classList.add('active');
+    });
+
+    closeBtn.addEventListener("click", () => {
+      menu.classList.remove('active');
+    });
+    </script>
+    
+
+  </body>
+</html>

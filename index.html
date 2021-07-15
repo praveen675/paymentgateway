@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAI Foundation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+  </head>
+  <body>
+
+    <header>
+      <a href="#" class="brand">SAI</a>
+      <div class="menu">
+        <div class="btn">
+          <i class="fas fa-times close-btn"></i>
+        </div>
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="Contact.html">Contact</a>
+      </div>
+      <div class="btn">
+        <i class="fas fa-bars menu-btn"></i>
+      </div>
+    </header>
+    <section class="section-main">
+    </section>
+    <section class="section-two">
+      <h2>Sai Foundation</h2>
+      <p>Your contribution has the power to uplift children in dire situations.</p>
+      <p>We’re working towards a nation where its children live a secure life, full of opportunities for growth and development.</p>
+      <p>Presently, we have 65 projects running across 18 states of India, where we were able to reach a total of 10.37 lakh children in 2020.</p>
+      <p>Save the Children has transformed the lives of over 14 million children since its establishment.</p>
+      <p>Be it nutrition, healthcare, protection, education, and response in the time of emergencies, Save the Children has been on the forefront, reshaping the lives of millions of children, since its establishment in India, in 2008.</p>
+      <p>Help poor children fight their way out of poverty. When it is hard to afford necessities like food, shelter, and clothing; education becomes a luxury that the poor give up.</p>
+
+      <div>
+
+     <a href="https://rzp.io/l/mD2bsDr" class="btn-cont" >Donate Here</a>
+    
+      </div>
+
+
+    </section>
+
+    <script type="text/javascript">
+    //javascript for navigation bar effect on scroll
+    window.addEventListener("scroll", function(){
+      var header = document.querySelector("header");
+      header.classList.toggle('sticky', window.scrollY > 0);
+    });
+
+    //javascript for responsive navigation sidebar menu
+    var menu = document.querySelector('.menu');
+    var menuBtn = document.querySelector('.menu-btn');
+    var closeBtn = document.querySelector('.close-btn');
+
+    menuBtn.addEventListener("click", () => {
+      menu.classList.add('active');
+    });
+
+    closeBtn.addEventListener("click", () => {
+      menu.classList.remove('active');
+    });
+    </script>
+</a>
+  </body>
+</html>
